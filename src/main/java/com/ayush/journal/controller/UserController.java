@@ -44,4 +44,13 @@ public class UserController {
         return userService.getAll();
     }
 
+    @PostMapping
+    public void createUser(@RequestBody User user){
+        userService.saveEntry(user);
+    }
+
+    public void deleteUser(@PathVariable ObjectId userId){
+        userService.deleteById(userId);
+    }
+
 }

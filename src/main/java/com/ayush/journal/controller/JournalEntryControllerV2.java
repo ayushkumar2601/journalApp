@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/_journal")
+@RequestMapping("/journal")
 public class JournalEntryControllerV2 {
 
 
